@@ -453,6 +453,7 @@
                 accuracy: finalAccuracy
             })
         }
+        loadLeaderboard()
     }
 
     input.addEventListener("keydown", e=>{
@@ -498,7 +499,6 @@
             wrongEl.textContent = wrong
             updateStats()
         }
-        loadLeaderboard()
     })
 
     window.restart = function (){
@@ -525,6 +525,7 @@
         wpmEl.textContent = 0
         cpmEl.textContent = 0
         accuracy.textContent = 100
+
     }
 
     startBtn.onclick = async () =>{
